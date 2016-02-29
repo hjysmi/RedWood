@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <CheckBox
+        android:id="@+id/id_check_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/login_psw_check_bg"
+        app:layout_heightPercent="5%w"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_widthPercent="5%w"
+        android:button="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="记住密码"
+        app:layout_marginLeftPercent="12%w"
+        app:layout_textSizePercent="4%w"
+        app:layout_widthPercent="18%w"/>
+    <CheckBox
+        android:id="@+id/id_check_autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/login_psw_check_bg"
+        app:layout_heightPercent="5%w"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="23%w"
+        app:layout_widthPercent="5%w"
+        android:button="@null"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="自动登录"
+        android:layout_alignParentRight="true"
+        app:layout_textSizePercent="4%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_widthPercent="16%w"
+        android:gravity="center_vertical|right"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/prodetail_top_bg">
+    <!--<ImageView
+        android:id="@+id/id_iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/prolist_back"
+        app:layout_widthPercent="8%w"
+        app:layout_heightPercent="8%w"
+        android:layout_centerVertical="true"
+        app:layout_marginLeftPercent="2%w"
+        />-->
+    <Button
+        android:id="@+id/but_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_40x80"
+        app:layout_heightPercent="13%w"
+        app:layout_widthPercent="26%w" />
+
+    <TextView
+        android:id="@+id/id_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        app:layout_textSizePercent="4%w"
+        app:layout_widthPercent="76%w" />
+
+    <Button
+        android:id="@+id/but_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/hp_cart_gray"
+        app:layout_heightPercent="8%w"
+        app:layout_marginRightPercent="2%w"
+        app:layout_widthPercent="8%w" />
+</com.zhy.android.percent.support.PercentFrameLayout>

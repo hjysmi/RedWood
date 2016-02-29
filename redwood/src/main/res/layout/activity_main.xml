@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+    <!--<LinearLayout
+        android:background="@drawable/tab_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <com.onepiece.redwood.ChangeColorWithText
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:tab_icon="@drawable/ic_menu_start_conversation"
+            hyman:tab_text="产品"
+            hyman:tab_text_size="12sp"
+            hyman:tab_color="#ff45c01a" />
+
+        <com.onepiece.redwood.ChangeColorWithText
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:tab_icon="@drawable/ic_menu_friendslist"
+            hyman:tab_text="客户"
+            hyman:tab_text_size="12sp"
+            hyman:tab_color="#ff45c01a" />
+
+        <com.onepiece.redwood.ChangeColorWithText
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:tab_icon="@drawable/ic_menu_emoticons"
+            hyman:tab_text="订单"
+            hyman:tab_text_size="12sp"
+            hyman:tab_color="#ff45c01a" />
+
+        <com.onepiece.redwood.ChangeColorWithText
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:tab_icon="@drawable/ic_menu_allfriends"
+            hyman:tab_text="购物车"
+            hyman:tab_text_size="12sp"
+            hyman:tab_color="#ff45c01a" />
+        <com.onepiece.redwood.ChangeColorWithText
+            android:id="@+id/id_indicator_five"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            hyman:tab_icon="@drawable/ic_menu_allfriends"
+            hyman:tab_text="我"
+            hyman:tab_text_size="12sp"
+            hyman:tab_color="#ff45c01a" />
+    </LinearLayout>-->
+
+</LinearLayout>

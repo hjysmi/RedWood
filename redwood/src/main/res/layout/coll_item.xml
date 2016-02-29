@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/self_bg">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customer_top_bg"
+        android:padding="1dp"
+        app:layout_heightPercent="18%w"
+        app:layout_marginBottomPercent="5%w"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginTopPercent="5%w"
+        app:layout_widthPercent="18%w">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="100%w"
+            app:layout_maxHeightPercent="200%w"
+            app:layout_maxWidthPercent="100%w"
+            app:layout_widthPercent="100%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@color/bg_000000"
+        app:layout_marginLeftPercent="25%w"
+        app:layout_marginTopPercent="6%w"
+        app:layout_textSizePercent="3.5%w" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="@color/b40000"
+        app:layout_heightPercent="5%w"
+        app:layout_marginLeftPercent="25%w"
+        app:layout_marginTopPercent="15%w"
+        app:layout_textSizePercent="3.5%w" />
+
+    <Button
+        android:id="@+id/but_jt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/customerfrag_jt"
+        app:layout_heightPercent="6%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_widthPercent="6%w" />
+
+    <Button
+        android:id="@+id/but_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/cart_del"
+        android:visibility="gone"
+        app:layout_heightPercent="8%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_widthPercent="8%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

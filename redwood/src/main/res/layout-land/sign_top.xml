@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/filter_price_bg">
+
+    <Button
+        android:id="@+id/id_but_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_40x80"
+        app:layout_heightPercent="7%w"
+        app:layout_widthPercent="14%w"
+        />
+
+    <Button
+        android:id="@+id/id_but_resign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sign_resign_bg"
+        android:text="重新签名"
+        android:textColor="#555555"
+        app:layout_heightPercent="5%w"
+        android:gravity="center"
+        app:layout_marginRightPercent="2%w"
+        app:layout_textSizePercent="2%w"
+        app:layout_widthPercent="12%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

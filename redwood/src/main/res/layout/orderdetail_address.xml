@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:id="@+id/id_orderdetail_rl">
+
+    <include
+        app:layout_marginTopPercent="5%w"
+        android:id="@+id/in_orderdetai_addresstop"
+        layout="@layout/orderdetai_addresstop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <include
+        app:layout_marginTopPercent="1%w"
+        layout="@layout/orderdetai_addressbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_orderdetai_addresstop"
+        app:layout_marginBottomPercent="5%w"
+        />
+</com.zhy.android.percent.support.PercentRelativeLayout>

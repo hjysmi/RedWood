@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/self_bg"
+    android:orientation="horizontal">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_img_bg"
+        android:gravity="center"
+        app:layout_heightPercent="17%w"
+        app:layout_marginBottomPercent="3%w"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginTopPercent="3%w"
+        app:layout_widthPercent="17%w"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/id_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="100%w"
+            app:layout_maxHeightPercent="200%w"
+            app:layout_maxWidthPercent="100%w"
+            app:layout_widthPercent="100%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:layout_heightPercent="17%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_widthPercent="76%w">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="#555555"
+            app:layout_marginTopPercent="2%w"
+            app:layout_textSizePercent="4.6%w" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Text"
+            android:textColor="#999999"
+            app:layout_marginBottomPercent="2%w"
+            app:layout_textSizePercent="3.95%w" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Text"
+            android:textColor="#999999"
+            app:layout_marginRightPercent="6.58%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

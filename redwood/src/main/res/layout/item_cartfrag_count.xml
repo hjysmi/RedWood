@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_count_change"
+    >
+
+    <Button
+        android:focusable="false"
+        android:id="@+id/id_but_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_but_bg"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="25%w" />
+
+    <TextView
+        android:id="@+id/id_tv_count"
+        android:layout_toRightOf="@+id/id_but_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="50%w"
+        android:gravity="center"
+        android:textColor="#555555"
+        app:layout_textSizePercent="15%w"
+        android:background="@drawable/cart_count_bg"
+        />
+    <Button
+        android:focusable="false"
+        android:id="@+id/id_but_plus"
+        android:layout_toRightOf="@+id/id_tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_but_bg"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#000000"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="25%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

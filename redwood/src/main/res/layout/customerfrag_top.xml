@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customer_top_bg">
+
+    <include
+        android:id="@+id/in_customerfrag_top"
+        layout="@layout/customerfrag_top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="2%w" />
+
+    <TextView
+        android:id="@+id/id_tv_strike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_customerfrag_top"
+        android:gravity="center"
+        android:text="已成交"
+        android:textColor="#b40000"
+        app:layout_textSizePercent="3.5%w"
+        app:layout_heightPercent="12%w"
+        app:layout_widthPercent="50%w" />
+
+    <TextView
+        android:id="@+id/id_tv_nostrike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/in_customerfrag_top"
+        android:gravity="center"
+        android:text="未成交"
+        app:layout_textSizePercent="3.5%w"
+        android:textColor="#555555"
+        app:layout_heightPercent="12%w"
+        app:layout_widthPercent="50%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,24 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.onepiece.redwood.prodetail.photoview.libs.HackyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/indexTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/oval_grey_bg"
+        android:textColor="@color/ffffff"
+        app:layout_marginBottomPercent="3%w"
+        app:layout_textSizePercent="3%w" />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

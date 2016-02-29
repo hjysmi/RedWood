@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_count"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/self_bg">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_img_bg"
+        android:gravity="center"
+        app:layout_heightPercent="17%w"
+        app:layout_marginBottomPercent="2%w"
+        app:layout_marginLeftPercent="5%w"
+        app:layout_marginTopPercent="2%w"
+        app:layout_widthPercent="17%w"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/id_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="100%w"
+            app:layout_maxHeightPercent="200%w"
+            app:layout_maxWidthPercent="100%w"
+            app:layout_widthPercent="100%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <TextView
+        android:id="@+id/id_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="#000000"
+        app:layout_heightPercent="5%w"
+        app:layout_marginLeftPercent="25%w"
+        app:layout_marginTopPercent="3%w"
+        app:layout_textSizePercent="3%w" />
+
+    <TextView
+        android:id="@+id/id_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="Text"
+        android:textColor="#b40000"
+        app:layout_heightPercent="5%w"
+        app:layout_marginLeftPercent="25%w"
+        app:layout_marginTopPercent="13%w"
+        app:layout_textSizePercent="3%w" />
+
+    <include
+        layout="@layout/item_cartfrag_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cart_count_bg"
+        app:layout_heightPercent="5%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_marginTopPercent="8%w"
+        app:layout_widthPercent="20%w" />
+    <Button
+        android:visibility="invisible"
+        android:focusable="false"
+        android:id="@+id/id_but_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:layout_heightPercent="10%w"
+        app:layout_marginRightPercent="5%w"
+        app:layout_marginTopPercent="8%w"
+        app:layout_widthPercent="10%w"
+        android:background="@drawable/cart_del"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

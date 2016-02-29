@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <include
+        android:id="@+id/in_orderdetail_top"
+        layout="@layout/orderdetail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="13%w" />
+
+    <include
+        android:id="@+id/in_orderdetail_address"
+        layout="@layout/orderdetail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_orderdetail_top"
+        app:layout_marginTopPercent="2%w" />
+
+    <include
+        android:id="@+id/in_orderdetail_num"
+        layout="@layout/orderdetai_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_orderdetail_address"
+        app:layout_heightPercent="10%w"
+        app:layout_marginTopPercent="2%w" />
+
+    <ListView
+        android:id="@+id/id_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/in_orderdetail_num"
+        android:divider="#eeeeee"
+        android:dividerHeight="1dp"
+        app:layout_marginBottomPercent="15%w"
+        />
+
+    <include
+        android:id="@+id/in_orderdetail_bottom"
+        layout="@layout/orderdetail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="15%w" />
+
+    <com.onepiece.redwood.WhorlView
+        android:id="@+id/id_whorlview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:WhorlView_BigWhorlColor="@color/material_red"
+        app:WhorlView_CircleSpeed="360"
+        app:WhorlView_MiddleWhorlColor="@color/material_red"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/material_red" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

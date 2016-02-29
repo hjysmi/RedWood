@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/filter_but_bg"
+    android:id="@+id/rl_material">
+<TextView
+    android:id="@+id/id_tv_material"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#343434"
+    android:text="材质"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    app:layout_marginTopPercent="5%w"
+    app:layout_textSizePercent="4%w"
+    />
+    <RadioGroup
+        android:id="@+id/id_radio_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_tv_material"
+        app:layout_marginTopPercent="7%w"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/id_but_material1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_material"
+            android:background="@drawable/popupwindow_select"
+            android:text="大红酸枝"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="#000000"
+            app:layout_heightPercent="7%w"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_marginTopPercent="5%w"
+            app:layout_textSizePercent="4%w"
+            app:layout_widthPercent="18.75%w" />
+        <RadioButton
+            android:id="@+id/id_but_material2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_material"
+            android:background="@drawable/popupwindow_select"
+            android:layout_toRightOf="@+id/id_but_material1"
+            android:text="小叶紫檀"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:button="@null"
+            app:layout_heightPercent="7%w"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_marginTopPercent="5%w"
+            app:layout_textSizePercent="4%w"
+            app:layout_widthPercent="18.75%w" />
+    </RadioGroup>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

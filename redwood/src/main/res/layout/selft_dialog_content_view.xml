@@ -1,0 +1,54 @@
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/but_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/self_camera_bg"
+        android:gravity="center"
+        android:text="相机"
+        android:onClick="onCameraClick"
+        app:layout_heightPercent="10%w"
+        app:layout_textSizePercent="3%w"
+        app:layout_widthPercent="90%w" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/e0e0e0"
+        app:layout_widthPercent="90%w" />
+
+    <Button
+        android:id="@+id/but_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/self_photo_bg"
+        android:gravity="center"
+        android:text="照片"
+        android:onClick="onPhotoClick"
+        app:layout_heightPercent="10%w"
+        app:layout_textSizePercent="3%w"
+        app:layout_widthPercent="90%w" />
+
+    <Button
+        android:id="@+id/but_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/self_cancel_bg"
+        android:gravity="center"
+        android:text="取消"
+        app:layout_heightPercent="10%w"
+        app:layout_marginBottomPercent="3%w"
+        app:layout_marginTopPercent="3%w"
+        app:layout_textSizePercent="3%w"
+        app:layout_widthPercent="90%w" />
+</com.zhy.android.percent.support.PercentLinearLayout>

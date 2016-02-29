@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <include
+        android:id="@+id/in_customerupdate_top"
+        layout="@layout/customerupdate_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="13%w" />
+
+    <include
+        android:id="@+id/in_customerupdate_name"
+        layout="@layout/customerupdate_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_customerupdate_top"
+        app:layout_heightPercent="11%w"
+        app:layout_marginTopPercent="5%w" />
+
+    <include
+        android:id="@+id/in_customerupdate_phone"
+        layout="@layout/customerupdate_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_customerupdate_name"
+        app:layout_heightPercent="11%w"
+        app:layout_marginTopPercent="1.5%w" />
+
+    <include
+        android:id="@+id/in_customerupdate_address"
+        layout="@layout/customerupdate_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_customerupdate_phone"
+        app:layout_heightPercent="11%w"
+        app:layout_marginTopPercent="1.5%w" />
+
+    <include
+        android:id="@+id/in_customerupdate_company"
+        layout="@layout/customerupdate_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_customerupdate_address"
+        app:layout_heightPercent="13%w"
+        app:layout_marginTopPercent="1%w" />
+
+    <com.onepiece.redwood.WhorlView
+        android:id="@+id/id_whorlview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:WhorlView_BigWhorlColor="@color/material_red"
+        app:WhorlView_CircleSpeed="360"
+        app:WhorlView_MiddleWhorlColor="@color/material_red"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/material_red" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

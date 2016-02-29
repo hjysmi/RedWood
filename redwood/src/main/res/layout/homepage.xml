@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        app:layout_marginBottomPercent="16.5%w" />
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="16.5%w">
+
+
+
+        <include
+            android:id="@+id/hp_pro"
+            layout="@layout/hp_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            app:layout_widthPercent="20%w"
+            android:layout_gravity="left"/>
+
+        <include
+            android:id="@+id/hp_customer"
+            layout="@layout/hp_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hp_pro"
+            app:layout_widthPercent="20%w"
+            app:layout_marginLeftPercent="20%w"/>
+
+        <include
+            android:id="@+id/hp_order"
+            layout="@layout/hp_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hp_customer"
+            app:layout_widthPercent="20%w"
+            app:layout_marginLeftPercent="40%w"
+            />
+
+        <include
+            android:id="@+id/hp_cart"
+            layout="@layout/hp_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hp_order"
+            app:layout_widthPercent="20%w"
+            app:layout_marginLeftPercent="60%w"/>
+
+        <include
+            android:id="@+id/hp_self"
+            layout="@layout/hp_self"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hp_cart"
+            app:layout_widthPercent="20%w"
+            app:layout_marginLeftPercent="80%w"/>
+           <View
+           android:layout_width="match_parent"
+           android:layout_height="1px"
+           android:layout_gravity="top"
+           android:background="#cccccc" />
+    </com.zhy.android.percent.support.PercentFrameLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

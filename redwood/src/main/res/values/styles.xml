@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.NoTitleBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="self_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/bg_dialog_00000000</item>
+    </style>
+    <style name="self_dialog_anim" >
+        <item name="android:windowEnterAnimation" >@anim/dialog_in</item>
+        <item name="android:windowExitAnimation" >@anim/dialog_out</item>
+    </style>
+</resources>

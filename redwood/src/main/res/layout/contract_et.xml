@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.onepiece.redwood.customer.contracts.lib.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/prodetail_top_bg"
+        android:hint="请输入关键字"
+        android:textColorHint="#c9c9c9"
+        android:singleLine="true"
+        app:layout_textSizePercent="3.5%w"
+        app:layout_heightPercent="11%w"
+        app:layout_widthPercent="96%w" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/proclassfrag_search"
+        app:layout_heightPercent="6%w"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_widthPercent="6%w" />
+    <!--android:drawableLeft="@drawable/search_bar_icon_normal"-->
+</com.zhy.android.percent.support.PercentFrameLayout>

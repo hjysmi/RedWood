@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/self_bg">
+
+    <Button
+        android:id="@+id/but_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_40x80"
+        app:layout_heightPercent="13%w"
+        app:layout_widthPercent="26%w" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="备注"
+        android:textColor="@color/bg_000000"
+        app:layout_textSizePercent="4.5%w" />
+
+    <Button
+        android:id="@+id/id_but_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/createcustomer_top_bg"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        app:layout_heightPercent="7%w"
+        app:layout_marginRightPercent="2%w"
+        app:layout_textSizePercent="3.5%w"
+        app:layout_widthPercent="15%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

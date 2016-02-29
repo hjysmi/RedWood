@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <include
+        android:id="@+id/in_loginact_top"
+        layout="@layout/loginact_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="13%w" />
+
+    <!-- <com.onepiece.redwood.customer.contracts.lib.RoundImageViewByXfermode
+         android:id="@+id/id_iv_img"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/in_loginact_top"
+         android:layout_centerHorizontal="true"
+         app:layout_heightPercent="30%w"
+         app:layout_marginLeftPercent="2%w"
+         app:layout_marginTopPercent="20%w"
+         app:layout_widthPercent="30%w"
+         app:type="circle" />-->
+    <!--<ImageView
+        android:id="@+id/id_iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_loginact_top"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="30%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginTopPercent="15%w"
+        app:layout_widthPercent="25%w" />-->
+    <com.onepiece.redwood.customer.contracts.lib.RoundImageViewByXfermode
+        android:id="@+id/id_iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_loginact_top"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="30%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginTopPercent="15%w"
+        app:layout_widthPercent="25%w"
+        app:type="circle" />
+
+    <include
+        android:id="@+id/in_login_uname"
+        layout="@layout/loginact_uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="10%w"
+        app:layout_marginTopPercent="65%w" />
+
+    <include
+        android:id="@+id/in_login_upsw"
+        layout="@layout/loginact_upsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_login_uname"
+        app:layout_heightPercent="10%w"
+        app:layout_marginTopPercent="2%w" />
+
+    <Button
+        android:id="@+id/but_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_login_upsw"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_bg"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/ffffff"
+        app:layout_heightPercent="13%w"
+        app:layout_marginTopPercent="5%w"
+        app:layout_textSizePercent="4%w"
+        app:layout_widthPercent="90%w" />
+
+
+    <!--记住密码,自动登录-->
+
+    <include
+        layout="@layout/loginac_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but_login"
+        app:layout_heightPercent="8%w"
+        app:layout_marginTopPercent="3%w" />
+
+
+    <com.onepiece.redwood.WhorlView
+        android:id="@+id/id_whorlview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:WhorlView_BigWhorlColor="@color/material_red"
+        app:WhorlView_CircleSpeed="360"
+        app:WhorlView_MiddleWhorlColor="@color/material_red"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/material_red" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/prodetail_top_bg">
+
+    <TextView
+        android:id="@+id/id_tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:textColor="#999999"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_textSizePercent="3%w" />
+
+    <TextView
+        android:id="@+id/id_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:textColor="#999999"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="3%w"
+        app:layout_textSizePercent="3%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

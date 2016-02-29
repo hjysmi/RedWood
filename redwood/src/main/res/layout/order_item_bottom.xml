@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/prodetail_top_bg">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Text"
+        android:textColor="#000000"
+        android:singleLine="true"
+        app:layout_textSizePercent="3%w"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_widthPercent="13%w"/>
+
+    <TextView
+        android:id="@+id/id_tv_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="实付款:"
+        android:textColor="#000000"
+        app:layout_heightPercent="6%w"
+        app:layout_marginLeftPercent="20%w"
+        app:layout_textSizePercent="3%w"
+        app:layout_widthPercent="10%w" />
+
+    <TextView
+        android:id="@+id/id_tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="text"
+        android:textColor="#b40000"
+        app:layout_marginLeftPercent="30%w"
+        app:layout_textSizePercent="3%w" />
+    <Button
+        android:id="@+id/id_but_gotrading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orderfrg_del_bg"
+        android:text="继续交易"
+        android:textColor="#999999"
+        app:layout_heightPercent="6%w"
+        app:layout_marginRightPercent="21%w"
+        app:layout_textSizePercent="3%w"
+        app:layout_widthPercent="20%w" />
+    <Button
+        android:id="@+id/id_but_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orderfrg_del_bg"
+        android:text="删除"
+        android:textColor="#999999"
+        app:layout_heightPercent="6%w"
+        app:layout_marginRightPercent="3%w"
+        app:layout_textSizePercent="3%w"
+        app:layout_widthPercent="15%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

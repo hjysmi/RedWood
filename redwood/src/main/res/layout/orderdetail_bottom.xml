@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/prodetail_top_bg">
+
+    <Button
+        android:id="@+id/id_but_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orderfrg_del_bg"
+        android:text="备注"
+        android:textColor="#555555"
+        app:layout_heightPercent="7%w"
+        app:layout_marginLeftPercent="3%w"
+        app:layout_textSizePercent="3.5%w"
+        app:layout_widthPercent="15.75%w" />
+
+    <Button
+        android:id="@+id/id_but_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/orderdetail_sign"
+        app:layout_heightPercent="7%w"
+        app:layout_marginRightPercent="3%w"
+        app:layout_widthPercent="15.75%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>
